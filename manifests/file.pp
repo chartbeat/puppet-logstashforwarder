@@ -36,7 +36,7 @@ define logstashforwarder::file(
   $opt_paths = "  \"paths\": ${arr_paths}"
 
   if ($dead_time != '') {
-      $opt_dead_time = ",\n     \"dead time\": ${dead_time}"
+      $opt_dead_time = ",\n     \"dead time\": \"${dead_time}\""
   }
 
   if ($fields != '') {
